@@ -1,7 +1,7 @@
 REGISTRY ?= docker.io
 TAG ?= demo
 
-DOCKER_IMAGE := $(REGISTRY)/tanushs298/java-grpc-connector-template:$(TAG)
+DOCKER_IMAGE := $(REGISTRY)/tanush29/java-grpc-connector-template:$(TAG)
 
 ifeq ($(shell uname -s),Darwin)
 	# gnu-sed, can be installed using homebrew
@@ -15,7 +15,7 @@ docker-login:
 
 docker-build:
 	chmod ug+x container/import-certs.sh
-	docker build -f container/Dockerfile -t $(DOCKER_IMAGE) .
+	docker build --no-cache -f container/Dockerfile -t $(DOCKER_IMAGE) .
 
 docker-push:
 	docker push $(DOCKER_IMAGE)
