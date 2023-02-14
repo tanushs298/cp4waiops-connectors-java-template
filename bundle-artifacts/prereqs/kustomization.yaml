@@ -16,7 +16,7 @@ configurations:
 
 images:
   - name: java-grpc-connector-template
-    newName: docker.io/tanushs298/java-grpc-connector-template
+    newName: docker.io/tanush29/java-grpc-connector-template
     newTag: demo
   - name: generic-topology-processor
     newName: cp.icr.io/cp/cp4waiops/generic-topology-processor
