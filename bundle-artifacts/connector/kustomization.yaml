@@ -13,7 +13,7 @@ configurations:
 
 images:
   - name: java-grpc-connector-template
-    newName: docker.io/tanush29/java-grpc-connector-template
+    newName: docker.io/tanushs298/java-grpc-connector-template
     newTag: demo
 
 vars:
